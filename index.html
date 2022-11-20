@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script defer src="src/js/main_js.js"></script>
+    <title>Box Shadow Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h2>box-shadow generator</h2>
+        <h3>настройки</h3>
+        <div class="box_group">
+          <p>Тень внутри элемента?</p>
+          <input type="checkbox" id="insert" />
+        </div>
+        <label for="">Смещение по оси X</label>
+        <input type="range" id="byX" min="-25" max="25" step="1" value="0" />
+
+        <label for="">Смещение по оси Y</label>
+        <input type="range" id="byY" min="-25" max="25" step="1" value="0" />
+
+        <label for="">Размытие</label>
+        <input type="range" id="blur" min="0" max="25" step="1" value="7" />
+
+        <label for="">Растяжение</label>
+        <input
+          type="range"
+          id="stretch"
+          min="-20"
+          max="20"
+          step="1"
+          value="5"
+        />
+
+        <label for="">Цвет</label>
+        <input type="color" id="color" />
+
+        <label for="">Прозрачность</label>
+        <input
+          type="range"
+          id="opacity"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0.5"
+        />
+
+        <h3>результат</h3>
+        <div id="result"></div>
+        <textarea id="codeCss" readonly></textarea>
+      </form>
+    </div>
+  </body>
+</html>

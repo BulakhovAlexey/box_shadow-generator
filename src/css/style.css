@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+form, input, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1100px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+input, label, textarea {
+    margin: 5px;
+}
+.box_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+h2, h3 {
+    text-transform: uppercase;
+}
+h3 {
+    padding: 10px;
+    background-color: rgb(46, 46, 144);
+    color: aliceblue;
+    margin-top: 20px;
+}
+#result {
+    margin: 30px;
+    height: 60px;
+    width: 60px;
+    background-color: rgb(156, 149, 74);
+}
+#codeCss {
+    margin-bottom: 30px;
+}
