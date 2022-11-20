@@ -13,7 +13,7 @@ function generateCss() {
   let result = document.getElementById("result");
   let textarea = document.getElementById("codeCss");
   let str = `${insert} ${byX}px ${byY}px ${blur}px ${stretch}px rgba(${red},${green},${blue},${opacity})`;
-  textarea.value = `Box-Shadow:` + str;
+  textarea.value = `box-shadow:` + str;
   result.style.boxShadow = str;
 }
 let items = document.querySelectorAll("form");
